@@ -11,7 +11,6 @@
 }
 
 #base-background{
-    position: relative;
     overflow-x: hidden;
     font-family: "bebas_neueregular";
     background-repeat: no-repeat;
@@ -20,19 +19,21 @@
 
 #name-intro{
     color: whitesmoke;
-    position: relative;
     font-weight: 400;
     font-size: 28px;
-    left: 30%;
+    display: grid;
+    place-items: center;
+    align-content: center;
     animation-name: slide-in-name-anim;
     animation-duration: 1s;
 }
 
 #name-intro-two{
     color: orange;
-    position: relative;
+    display: grid;
+    place-items: center;
+    align-content: center;
     font-weight: 400;
-    left: 45%;
     font-size: 28px;
     animation-name: slide-in-name-anim-two;
     animation-duration: 1s;
@@ -45,9 +46,9 @@
 
 #about-me-header{
     display: grid;
-    margin-top: 20%;
     place-items: center;
     align-content: center;
+    margin-top: 20%;
     font-size: 28px;
     color: whitesmoke;
 }
