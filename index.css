@@ -1,20 +1,21 @@
-/* The animation code */
+/* The animation code
 @keyframes slide-in-name-anim {
     from {left: -99%;}
     to {left: 30%;}
 }
 
-/* The animation code */
-@keyframes slide-in-name-anim-two {
-    from {left: 200%;}
-    to {left: 45%;}
-}
+/* The animation code  */
+ @keyframes typing-anim{
+    0% {width: 0;}
+    50% {width: 0;}
+    100% {width: 100%;}
+ }  
 
 #base-background{
     overflow-x: hidden;
     font-family: "bebas_neueregular";
     background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom right, #2E0854, #001F3F);
+    background-image: radial-gradient(circle, #2E0854, #001F3F);
 }
 
 #name-intro{
@@ -24,19 +25,20 @@
     display: grid;
     place-items: center;
     align-content: center;
-    animation-name: slide-in-name-anim;
-    animation-duration: 1s;
+    /* animation-name: slide-in-name-anim;
+    animation-duration: 1s; */
 }
 
 #name-intro-two{
-    color: orange;
-    display: grid;
-    place-items: center;
-    align-content: center;
+    color: whitesmoke;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    left: 35%;
     font-weight: 400;
     font-size: 28px;
-    animation-name: slide-in-name-anim-two;
-    animation-duration: 1s;
+    animation-name: typing-anim;
+    animation-duration: 2s;
 }
 
 #intro{
@@ -106,6 +108,7 @@
 #container-projects #projects-items {
     width: 200px;
     height: 200px;
+    align-content: center;
     text-align: top;
     margin: 2px;
     color: whitesmoke;
